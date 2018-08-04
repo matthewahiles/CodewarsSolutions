@@ -48,5 +48,5 @@ let rec executeInstructions (instructions: char array, tape: char array, instruc
                     | _ -> executeInstructions(instructions, tape, instructionsLoc + 1, tapeLoc)
            | _ -> executeInstructions(instructions, tape, instructionsLoc + 1, tapeLoc)
 let interpreter (code: string) (tape: string) =
-    executeInstructions(code.ToCharArray(), tape.ToCharArray(), 0, 0).ToString()
+    executeInstructions(code.ToCharArray(), tape.ToCharArray(), 0, 0)
  
